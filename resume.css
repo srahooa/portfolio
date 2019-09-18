@@ -1,0 +1,38 @@
+@media screen and (max-width: 420px) {
+  #container {
+    width: 100%;
+    padding-top: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1rem;
+  }
+}
+
+h1 {
+  font-family: 'Quando', serif;
+  font-size: 4rem;
+}
+
+#main-nav {
+  background-color: #76b8d0;
+  color: whitesmoke;
+  padding: 20px;
+  margin: 20px;
+  font-size: 1rem;
+}
+
+#main-nav:hover {
+  background-color: #ebf1fa;
+  color: #333363;
+}
+
+.text {
+  margin: 50px;
+  padding: 0px;
+}
+
+.icons {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  justify-items: center;
+}
+/*# sourceMappingURL=resume.css.map */

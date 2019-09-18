@@ -1,0 +1,53 @@
+
+#container{
+    width: 100%;
+    padding-top: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1rem;
+}
+
+#main-nav {
+        background-color: #0a6586;
+        color: whitesmoke;
+        padding: 20px;
+        margin: 20px;
+        font-size: 1rem;
+        &:hover {
+            background-color: #ebf1fa;
+            color: #333363;        
+    }
+}
+
+.contact {
+    padding: 20px;
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #616161d9;
+        border-radius: 4px;
+        }
+    
+        #submit {
+            width: 100px;
+            border-radius: 50px;
+        }
+}
+
+    
+// MEDIA QUERIES    
+@media screen and (max-width: 420px) {
+    #container {
+        width: 100%;
+        padding-top: 15px;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 1rem;
+    }
+}    
+    
+@media screen and (min-width: 421px) and (max-width: 800px) {
+}
+    
+@media screen and (min-width: 801px) {
+}

@@ -1,0 +1,66 @@
+#container {
+        // padding-top: 15px;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 1rem;
+        display: grid;
+        background-repeat: no-repeat;
+        background-image: url(images/lion.jpg);
+        background-position: bottom;
+        background-attachment: fixed;
+        background-color: rgb(255, 255, 255);
+        background-size: 100vh;
+}
+
+h1 {
+    font-family: 'Quando', serif;
+    font-size: 4rem;
+    padding: 20px;
+    color: #740000;
+}
+
+#main-nav {
+        background-color: #cecece;
+        padding: 5px 20px;
+        margin: 20px;
+        font-size: 1rem;
+        position: fixed;
+        a {
+            text-decoration-line: none;
+            color: #5e5d5d;   
+            &:hover {
+                background-color: #ebf1fa;
+                color: #333363;        
+        }
+    }
+}
+
+.text {
+    margin: 200px 0;
+    padding: 15px 0px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    h3 {
+        padding: 0 20px;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 420px) {
+    #container {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 801px) {
+
+}
