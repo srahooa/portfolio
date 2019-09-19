@@ -1,33 +1,38 @@
 #container {
-  width: 100%;
-  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Maven Pro', sans-serif;
-  font-size: 1rem;
-  display: -ms-grid;
-  display: grid;
+  font-size: 24px;
   background-repeat: no-repeat;
   background-image: url(images/lion.jpg);
-  background-position: bottom;
+  background-position: static bottom;
   background-attachment: fixed;
   background-color: white;
   background-size: 100vh;
-  margin: 50px 0;
 }
 
 h1 {
   font-family: 'Quando', serif;
-  font-size: 4rem;
-  padding: 20px;
+  font-size: 3rem;
+  padding: 100px;
   color: #740000;
 }
 
 #main-nav {
   background-color: #cecece;
-  opacity: .7;
+  opacity: .5;
   padding: 20px;
-  margin: 20px;
+  margin: 0 20px;
   font-size: 1rem;
-  position: absolute fixed;
+  position: fixed;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#main-nav a:hover {
+  background-color: #ebf1fa;
+  color: #333363;
 }
 
 #main-nav a {
@@ -36,18 +41,13 @@ h1 {
   color: #5e5d5d;
 }
 
-#main-nav a:hover {
-  background-color: #ebf1fa;
-  color: #333363;
-}
-
 div {
   width: 90%;
   padding: 10px;
 }
 
 div .text {
-  margin: 50px;
+  margin: 30px;
   padding: 0px;
 }
 
@@ -74,10 +74,66 @@ img:hover {
 }
 
 footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  height: 50px;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+@media screen and (max-width: 420px) {
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 800px) {
+  #container {
+    width: 100%;
+  }
+  #main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 50px;
+  }
+  .text {
+    padding: 200px 50px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #container {
+    font-size: 3rem;
+    background-repeat: no-repeat;
+    background-image: url(images/lion-wide.jpg);
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-color: e4e4e4;
+    background-size: 100vw;
+  }
+  #main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    margin: 50px;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  .text {
+    padding: 200px 50px;
+  }
+  .text ul {
+    padding: 70px;
+  }
 }
 /*# sourceMappingURL=about.css.map */

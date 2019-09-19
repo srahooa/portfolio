@@ -1,21 +1,41 @@
-
-#container{
-    width: 100%;
-    padding-top: 15px;
+#container {
+    // height: 90 hv;
+    // display: grid;
+    // grid-template-columns: 1fr auto 1fr;
+    // grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 1rem;
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-image: url(images/lion.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+    background-size: 100vh;
 }
 
 #main-nav {
-        background-color: #0a6586;
-        color: whitesmoke;
-        padding: 20px;
-        margin: 20px;
-        font-size: 1rem;
-        &:hover {
-            background-color: #ebf1fa;
-            color: #333363;        
+    background-color: #cecece;
+    opacity: .5;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1rem;
+    position: fixed;
+    justify-content: space-around;
+    a:hover {
+        background-color: #ebf1fa;
+        color: #333363;        
     }
+    a {
+        text-decoration-line: none;
+        color: #5e5d5d;      
+    }
+}
+
+h1 {
+    font-family: 'Quando', serif;
+    font-size: 4rem;
+    padding: 100px 20px;
+    color: #740000;
 }
 
 .contact {
@@ -27,6 +47,7 @@
         box-sizing: border-box;
         border: 2px solid #616161d9;
         border-radius: 4px;
+        opacity: .8;
         }
     
         #submit {
@@ -35,19 +56,71 @@
         }
 }
 
-    
-// MEDIA QUERIES    
+footer {
+    display: grid;
+    justify-self: center;
+    height: 50px;
+}
+ 
+
+// PHONE
 @media screen and (max-width: 420px) {
     #container {
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        padding-top: 15px;
-        font-family: 'Maven Pro', sans-serif;
-        font-size: 1rem;
+        height: auto;
+        font-size: 24px;
     }
-}    
-    
-@media screen and (min-width: 421px) and (max-width: 800px) {
 }
-    
+
+// TABLET
+@media screen and (min-width: 421px) and (max-width: 800px) {
+    #container {
+        width: 100%;
+    }
+
+    #main-nav {
+        display: grid;
+        grid-area: top;
+        width: 80%;
+        margin: 50px;
+    }
+
+    .text {
+        padding: 200px 50px;
+        ul {
+            padding: 70px;
+        }
+    }
+
+}
+
+// DESKTOP
 @media screen and (min-width: 801px) {
+#container {    
+        font-size: 3rem;
+        background-repeat: no-repeat;
+        background-image: url(images/lion.jpg);
+        background-position: left bottom;
+        background-attachment: fixed;
+        background-color: rgb(255, 255, 255);
+        background-size: 100vh;
+}
+
+    #main-nav {
+        display: flex;
+        width: 95%;
+        margin: 50px;
+    }
+    h1 {
+        font-size: 9rem;
+    }
+    .text {
+        padding: 200px 50px;
+            ul {
+                padding: 70px;
+        }
+    }
+
 }
