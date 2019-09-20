@@ -1,0 +1,76 @@
+#container {
+  width: 100%;
+  background-image: url(../docs/lion.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Maven Pro', sans-serif;
+  background-color: white;
+  background-size: 100vh;
+}
+
+#container h1 {
+  font-family: 'Quando', serif;
+  font-size: 4rem;
+  color: #740000;
+  padding: 100px;
+}
+
+.text h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  color: white;
+  background-color: #2e2e2e;
+  border-radius: 40px;
+  opacity: .6;
+  margin: 70px 15px 0 15px;
+  padding: 20px;
+}
+
+ul {
+  justify-items: center;
+  font-weight: bold;
+  color: white;
+  background-color: #2e2e2e;
+  border-radius: 40px;
+  opacity: .6;
+  margin: 150px 15px;
+  padding: 20px;
+}
+
+ul li {
+  margin: 20px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+footer #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: black;
+  list-style-type: none;
+  padding: 10px;
+}
+/*# sourceMappingURL=portfolio.css.map */
