@@ -1,130 +1,72 @@
-#container {
-    width: 100%;
-    background-image: url(../docs/lion.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Maven Pro', sans-serif;
-    background-color: rgb(255, 255, 255);
-    background-size: 100vh;
-    h1 {
-        font-family: 'Quando', serif;
-        font-size: 4rem;
-        color: #740000;
-        padding: 100px;
-    }
-    }
-
-.text {
+.text { 
+    width: 80%;
+    
     h3 {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        color: white;
-        background-color: #2e2e2e;
-        border-radius: 40px;
-        // filter: blur(5px);
-        opacity: .6;
-        margin: 70px 15px 0 15px;
-        padding: 20px;
-        
-    }
-}
-
-ul {
-    justify-items: center;
-    font-weight: bold;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #2e2e2e;
     border-radius: 40px;
-    // filter: blur(5px);
-    opacity: .6;
-    margin: 150px 15px;
-    padding: 20px;
-    li {
-        margin: 20px;
+    font-size: 1.3rem;   
+    color: white;
+    opacity: .6;  
+    padding: 30px;
+    margin: 0 0 30px 0;      
+    }
+    #list {
+        background-color: #2e2e2e;
+        border-radius: 40px;
+        font-size: 1.3rem;   
+        color: white;
+        opacity: .6; 
+        padding: 30px;
+        li {
+            list-style-type: disc;
+        }
     }
 }
 
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 1rem;
-    margin: 10px;
-    #links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        color: black;
-        list-style-type: none;
-        padding: 10px;
+// PHONE
+@media screen and (max-width: 420px) {
+    #container {
+        width: 100%;
+        height: auto;
     }
 }
 
-// // PHONE
-// @media screen and (max-width: 420px) {
-//     #container {
-//         width: 100%;
-//         height: auto;
-
-//     }
-// }
-
-// // TABLET
-// @media screen and (min-width: 421px) and (max-width: 800px) {
-//     #container {
-
-//     }
-
-//     #main-nav {
-//         display: flex;
-//         width: 80%;
-//         margin: 50px;
-//     }
-//     .text {
-//         padding: 200px 50px;
-//         ul {
-//             padding: 70px;
-//         }
-//     }
-// }
+// TABLET
+@media screen and (min-width: 421px) and (max-width: 800px) {
+    #container {
+        width: 100%;
+        height: auto;
+    }
+}
 
 // // DESKTOP
 // @media screen and (min-width: 801px) {
 //     #container {    
-//             font-size: 3rem;
-//             background-repeat: no-repeat;
-//             background-image: url(../docs/lion-wide.jpg);
-//             background-size: cover;
-//             background-attachment: fixed;
-//             background-color:e4e4e4;
-//             background-size: 100vh;
-//             display: flex;
-//         }
-
-//     #main-nav {
+//         //     font-size: 3rem;
+//         //     background-repeat: no-repeat;
+//         //     background-image: url(../docs/lion-wide.jpg);
+//         //     background-size: cover;
+//         //     background-attachment: fixed;
+//         //     background-color:e4e4e4;
+//         //     background-size: 100vh;
+//         //     display: flex;
+//         // }
 //         display: flex;
-//         width: 100%;
-//         margin: 50px;
-//         font-size: 2rem;
-//         a:hover {
-//             background-color: whitesmoke;
-//             color: darkblue;
-//             }
-//         }
+//         justify-content: center;
+
+  
 //     h1 {
 //         font-size: 9rem;
 //         }
 //     .text {
 //         display: flex;
 //         flex-wrap: wrap;
-//         padding: 100px 50px;
 //         width: 70%;
 //         h3 {
-//             margin: 0 0 0 250px;
-//             padding: 20px 0;
 //         }
 //         ul {
 //             margin: 0 0 0 250px;
@@ -138,4 +80,4 @@ footer {
 
 
 //     }
-// }
+// 

@@ -1,98 +1,16 @@
-#container {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 24px;
-    background-repeat: no-repeat;
-    background-image: url(../docs/lion.jpg);
-    background-position: static bottom;
-    background-attachment: fixed;
-    background-color: rgb(255, 255, 255);
-    background-size: 100vh;
-    h1 {
-        font-family: 'Quando', serif;
-        font-size: 3rem;
-        padding: 100px 20px;
-        color: #740000;  
-    }
-}
-
-ul {
-    justify-items: center;
-    font-weight: bold;
-    color: white;
-    background-color: #2e2e2e;
-    border-radius: 40px;
-    opacity: .9;
-    // margin: 150px 15px;
-    // padding: 20px;
-    li {
-        margin: 20px;
-    }
-}
-
-// #main-nav {
-//     background-color: #cecece;
-//     opacity: .5;
-//     padding: 20px;
-//     margin: 0 20px;
-//     font-size: 1rem;
-//     position: fixed;
-//     justify-content: space-around;           
-//     a {
-//         text-decoration-line: none;
-//         color: #5e5d5d; 
-//         &:hover {
-//             background-color: #ebf1fa;
-//             color: #333363;  
-//         }
-//     }
-// }
-
 .values {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // width: 90%;
-    // padding: 10px;
-    // .text {
-    //     margin: 30px;
-    //     padding: 0px;
-        // .transbox {
-        //     margin: 30px;
-        //     background-color: #ffffff;
-        //     border: 1px solid black;
-        //     opacity: 0.6;
-        // }
-}
-
-img {
-    display: flex;
-    justify-content: center;
-    width: 150px;
-    border-radius: 50%;
-    filter: grayscale(100%);  
-    &:hover {
-        filter: none;
-        transition-duration: 2s;
-    }
-}
-
-footer {
-    color: black;
-    font-size: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    #links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-                list-style-type: none;
-        padding: 10px;
-        .icons  {    
-            padding: 10px;
-            }
-        
-    }
+    img {
+        width: 200px;
+        border-radius: 50%;
+        filter: grayscale(100%);  
+        &:hover {
+            filter: none;
+            transition-duration: 2s;
+        }
+    }    
 }
 
 // PHONE
@@ -102,89 +20,81 @@ footer {
         flex-wrap: wrap;
         width: 100%;
         height: auto;
+        h1 {
+            padding: 75px 45px;
+        }
     }
-}
+    .values {
+        font-size: 1.2rem;
+        margin-left: 25%;
+        p {
+            justify-content: center;
+        }
+    }
+    .text {
+        font-size: 1.2rem;
+        margin: 10%;
+    }
+}    
 
 // TABLET
 @media screen and (min-width: 421px) and (max-width: 800px) {
     #container {
-        width: 100%;
-        // display: flex;
-        // flex-flow: flex-wrap;
-        // grid-template-columns: 15% 70% 15%; 
-        // grid-template-rows: auto;
-        // grid-template-areas: 
-        //     "menu menu menu"
-        //     " . about . "
-        //     " . values . "
-        //     " . text . "
-        //     "footer footer footer"
-    }
-
-    #main-nav {
+        // width: 100%;
+        background-size: cover;
+        width: 100% vp;
         display: flex;
-        width: 80%;
-        margin: 50px;
-    }
-    #values {
-        
-    }
-    h1 {
-        display: block;
-        width: 100%;
-        margin-left: auto;
-    }
-    .text {
-        display: flex;
-        padding: 200px 50px;
-        // ul {
-        //     padding: 70px;
-        // }
-    }
-
-}
-
+        flex-wrap: wrap;
+        justify-content: center;
+        h1 {
+            width: 100%;
+            margin-left: auto;
+        }
+        .values {
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    width: 80%;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }      
 
 // DESKTOP
 @media screen and (min-width: 801px) {
     #container {    
-            font-size: 3rem;
-            background-repeat: no-repeat;
-            background-image: url(../docs/lion-wide.jpg);
-            background-position: left bottom;
-            background-attachment: fixed;
-            background-color:e4e4e4;
-            background-size: cover;
-            // display: flex;
-            // display: grid;
-            // grid-template-rows: 1fr 1fr 1fr 1fr;
-            // grid-template-columns: auto;
-    }
-    
-        #main-nav {
-            display: flex;
-            width: 80%;
-            margin: 50px;
-            font-size: 2rem;
-
-        }
-
+        background-image: url(../docs/lion-wide.jpg);
+        background-position: cover;
+        background-size: cover;
+        width: 100% vp;
+        nav {
+            height: 0;
+        }        
         h1 {
-            font-size: 8rem;
+            font-size: 6rem;
             width: 100%;
-            display: block;
-            box-sizing: 70%;
         }
-        .text {
-            #values{
+        .values {
+            div {
+                flex: 1;
                 display: flex;
-                flex-direction: row;
-                img {
-                    flex-direction: row;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    font-size: 2rem;
                 }
             }
-                ul {
-                    padding: 70px;
-            }
         }
-    }
+
+        .text {
+            justify-content: center;
+            margin-left: 10px;
+            font-size: 1.2rem;
+            content: space-evenly;
+        }
+    }   
+}
+}

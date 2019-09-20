@@ -1,76 +1,50 @@
-#container {
-  width: 100%;
-  background-image: url(../docs/lion.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Maven Pro', sans-serif;
-  background-color: white;
-  background-size: 100vh;
-}
-
-#container h1 {
-  font-family: 'Quando', serif;
-  font-size: 4rem;
-  color: #740000;
-  padding: 100px;
+.text {
+  width: 80%;
 }
 
 .text h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 80%;
-  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #2e2e2e;
   border-radius: 40px;
+  font-size: 1.3rem;
+  color: white;
   opacity: .6;
-  margin: 70px 15px 0 15px;
-  padding: 20px;
+  padding: 30px;
+  margin: 0 0 30px 0;
 }
 
-ul {
-  justify-items: center;
-  font-weight: bold;
-  color: white;
+.text #list {
   background-color: #2e2e2e;
   border-radius: 40px;
+  font-size: 1.3rem;
+  color: white;
   opacity: .6;
-  margin: 150px 15px;
-  padding: 20px;
+  padding: 30px;
 }
 
-ul li {
-  margin: 20px;
+.text #list li {
+  list-style-type: disc;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1rem;
-  margin: 10px;
+@media screen and (max-width: 420px) {
+  #container {
+    width: 100%;
+    height: auto;
+  }
 }
 
-footer #links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  color: black;
-  list-style-type: none;
-  padding: 10px;
+@media screen and (min-width: 421px) and (max-width: 800px) {
+  #container {
+    width: 100%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

@@ -1,86 +1,49 @@
-#container {
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 24px;
-  background-repeat: no-repeat;
-  background-image: url(../docs/lion.jpg);
-  background-position: bottom;
-  background-attachment: fixed;
-  background-color: white;
-  background-size: 100vh;
-}
-
-h1 {
-  font-family: 'Quando', serif;
-  font-size: 4rem;
-  color: #740000;
-  padding: 100px;
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 h3 {
-  justify-items: center;
-  color: white;
-  background-color: #2e2e2e;
-  border-radius: 40px;
-  opacity: .6;
-  margin: 70px 15px;
-  padding: 20px;
-}
-
-ul {
-  justify-items: center;
+  font-family: 'Quando', serif;
+  color: #740000;
   font-weight: bold;
-  color: white;
-  background-color: #2e2e2e;
-  border-radius: 40px;
-  opacity: .9;
-  margin: 150px 15px;
-  padding: 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-ul li {
-  margin: 20px;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1rem;
-  margin: 10px;
-}
-
-footer #links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  color: black;
-  list-style-type: none;
-  padding: 10px;
+p {
+  margin: 30px;
 }
 
 @media screen and (max-width: 420px) {
   #container {
-    width: 100%;
-    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  img {
+    width: 70%;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
 @media screen and (min-width: 421px) and (max-width: 800px) {
+  #container {
+    width: 100%;
+  }
   .text {
     padding: 200px 50px;
-  }
-  .text ul {
-    padding: 70px;
   }
 }
 
@@ -99,9 +62,6 @@ footer #links {
   }
   .text {
     padding: 200px 50px;
-  }
-  .text ul {
-    padding: 70px;
   }
 }
 /*# sourceMappingURL=news.css.map */
