@@ -1,5 +1,21 @@
 .contact {
-  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+.contact p {
+  background-color: whitesmoke;
+  opacity: .7;
+  border-radius: 40px;
+  padding: 15px;
+  margin: 10px;
 }
 
 .contact input {
@@ -9,66 +25,60 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid #616161d9;
-  border-radius: 4px;
+  border-radius: 40px;
   opacity: .8;
+}
+
+.contact label {
+  background-color: whitesmoke;
+  opacity: .5;
+  border-radius: 40px;
+  padding: 5px;
 }
 
 .contact #submit {
   width: 100px;
   border-radius: 50px;
+  margin: 15px 0 75px 0;
 }
 
 @media screen and (max-width: 420px) {
   #container {
     width: 100%;
-    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (min-width: 421px) and (max-width: 800px) {
-  #container {
-    width: 100%;
+  .contact {
+    font-size: 1.3rem;
   }
-  #main-nav {
-    display: -ms-grid;
-    display: grid;
-    grid-area: top;
+  .contact form {
     width: 80%;
-    margin: 50px;
-  }
-  .text {
-    padding: 200px 50px;
-  }
-  .text ul {
-    padding: 70px;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 801px) {
   #container {
-    font-size: 3rem;
-    background-repeat: no-repeat;
-    background-image: url(../docs/lion-wide.jpg);
-    background-position: left bottom;
-    background-attachment: fixed;
-    background-color: white;
-    background-size: 100vh;
+    height: 100% vh;
   }
-  #main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 95%;
-    margin: 50px;
+  .contact {
+    margin-left: 10%;
   }
-  h1 {
-    font-size: 9rem;
+  .contact p {
+    font-size: 1.8rem;
   }
-  .text {
-    padding: 200px 50px;
-  }
-  .text ul {
-    padding: 70px;
+  .contact form {
+    width: 60%;
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=contact.css.map */

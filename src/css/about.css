@@ -9,6 +9,13 @@
           justify-content: center;
 }
 
+.values p {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  opacity: .7;
+}
+
 .values img {
   width: 200px;
   border-radius: 50%;
@@ -23,6 +30,15 @@
           transition-duration: 2s;
 }
 
+.text {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 20px;
+  opacity: .7;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 420px) {
   #container {
     display: -webkit-box;
@@ -31,23 +47,29 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    margin-bottom: 50px;
   }
   #container h1 {
-    padding: 75px 45px;
+    padding: 75px 45px 45px 45px;
   }
   .values {
     font-size: 1.2rem;
-    margin-left: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 20%;
   }
   .values p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .text {
-    font-size: 1.2rem;
-    margin: 10%;
+    padding: 10px;
   }
 }
 
@@ -66,7 +88,7 @@
   }
   #container h1 {
     width: 100%;
-    margin-left: auto;
+    text-align: center;
   }
   #container .values div {
     display: -webkit-box;
@@ -83,24 +105,19 @@
   #container .values div p {
     width: 80%;
     font-size: 2rem;
+    margin: 10px;
+  }
+  #container .text {
+    padding: 30px 0;
+  }
+  #container .text p {
+    font-size: 1.6rem;
+    margin: 25px;
   }
 }
 
-@media screen and (min-width: 421px) and (max-width: 800px) and (min-width: 801px) {
-  #container {
-    background-image: url(../docs/lion-wide.jpg);
-    background-position: cover;
-    background-size: cover;
-    width: 100% vp;
-  }
-  #container nav {
-    height: 0;
-  }
-  #container h1 {
-    font-size: 6rem;
-    width: 100%;
-  }
-  #container .values div {
+@media screen and (min-width: 801px) {
+  .values div {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -114,16 +131,19 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 70%;
   }
-  #container .values div p {
+  .values div p {
+    width: 80%;
     font-size: 2rem;
+    margin: 10px;
   }
-  #container .text {
+  .text {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 10px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     content: space-evenly;
   }
 }

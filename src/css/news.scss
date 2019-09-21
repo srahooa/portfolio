@@ -1,20 +1,70 @@
+#blog-info {
+    font-size: 1rem;
+    color: black;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    opacity: .7;
+    #link {
+        color: #740000;
+        font-weight: bold;
+    }
+    #internal {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;  
+    }
+}
 
-img {
+#internal {
+    color: whitesmoke;
+    background-color: #740000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    opacity: .6;
+    font-size: .7rem;
+}
+.previews {
     display: flex;
-    justify-content: space-around;
-    // margin: 25%;
-}   
-h3 {
-    font-family: 'Quando', serif;
-    color: #740000;
-    font-weight: bold;
-    justify-self: center;
-}
-p {
-    margin: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        width: 250px;
+        margin: 20px;
+        border-radius: 20px;
+        filter: grayscale(100%);  
+        &:hover {
+            filter: none;
+            transition-duration: 2s;
+        } 
+    } 
+    .date {
+        font-size: .8rem;
+        margin: 0 15px;
+        padding: 10px 0;
+    }  
+    h3 {
+        background-color: whitesmoke;
+        padding: 10px;
+        // margin: 15px;
+        border-radius: 20px;
+        opacity: .8;
+        font-family: 'Quando', serif;
+        color: #740000;
+        font-weight: bold;
+    }  
 }
 
-
+#preview {
+    background-color: whitesmoke;
+    padding: 10px 10px 30px 10px;
+    margin: 15px;
+    border-radius: 20px;
+    opacity: .8;
+    font-size: 1.2rem;
+}
 
 // PHONE
 @media screen and (max-width: 420px) {
@@ -22,38 +72,58 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    img {
-        width: 70%;
-        justify-self: center;
+        padding-bottom: 75px;
     }
 }
 
 // TABLET
 @media screen and (min-width: 421px) and (max-width: 800px) {
-    #container {
-        width: 100%;
+   #blog-info {
+       font-size: 1.5rem;
+       width: 70%;
+   }
+    p {
+        font-size: 1.4rem;
     }
-    .text {
-        padding: 200px 50px;
+    .previews {
+        width: 80%;
+        padding-bottom: 50px;
+        h3 {
+            font-size: 1.6;
+            font-weight: bold;
+        }
+        img {
+            width: 400px;
+            justify-content: center;
+        }
     }
 }
 
 // DESKTOP
 @media screen and (min-width: 801px) {
-    #container {    
-        font-size: 3rem;
-        background-repeat: no-repeat;
-        background-image: url(../docs/lion.jpg);
-        background-position: left bottom;
-        background-attachment: fixed;
-        background-color:e4e4e4;
-        background-size: 100vw;
-    }
-    h1 {
-        font-size: 9rem;
-    }
-    .text {
-        padding: 200px 50px;
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 80px;
+        #blog-info {
+            font-size: 1.5rem;
+            width: 70%;
+        } 
+        p {
+            font-size: 1.4rem;
+        }
+        .previews {
+            width: 80%;
+            padding-bottom: 50px;
+            h3 {
+                font-size: 1.6;
+                font-weight: bold;
+            }
+            img {
+                width: 400px;
+                justify-content: center;
+            }
+        } 
     }
 }

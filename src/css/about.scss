@@ -2,6 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    p {
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 20px;
+        opacity: .7;
+    }
     img {
         width: 200px;
         border-radius: 50%;
@@ -12,6 +18,14 @@
         }
     }    
 }
+.text {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    opacity: .7;
+    font-size: 1.2rem;
+}
 
 // PHONE
 @media screen and (max-width: 420px) {
@@ -19,28 +33,27 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        height: auto;
+        margin-bottom: 50px;
         h1 {
-            padding: 75px 45px;
+            padding: 75px 45px 45px 45px;
         }
     }
     .values {
         font-size: 1.2rem;
-        margin-left: 25%;
-        p {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 20%;
+        p {            
             justify-content: center;
-        }
+            padding: 10px;
+        }   
     }
-    .text {
-        font-size: 1.2rem;
-        margin: 10%;
-    }
-}    
+}
 
 // TABLET
 @media screen and (min-width: 421px) and (max-width: 800px) {
     #container {
-        // width: 100%;
         background-size: cover;
         width: 100% vp;
         display: flex;
@@ -48,7 +61,7 @@
         justify-content: center;
         h1 {
             width: 100%;
-            margin-left: auto;
+            text-align: center;
         }
         .values {
             div {
@@ -58,43 +71,40 @@
                 p {
                     width: 80%;
                     font-size: 2rem;
+                    margin: 10px;
                 }
             }
         }
-    }      
-
+        .text {
+            padding: 30px 0;
+            p {
+                font-size: 1.6rem;
+                margin: 25px;
+            }
+        }      
+    }
+}
 // DESKTOP
 @media screen and (min-width: 801px) {
-    #container {    
-        background-image: url(../docs/lion-wide.jpg);
-        background-position: cover;
-        background-size: cover;
-        width: 100% vp;
-        nav {
-            height: 0;
-        }        
-        h1 {
-            font-size: 6rem;
-            width: 100%;
-        }
-        .values {
-            div {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                p {
-                    font-size: 2rem;
-                }
+    .values {
+        div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+            p {
+                width: 80%;
+                font-size: 2rem;
+                margin: 10px;
             }
-        }
+        }   
+    }
+    .text {
+        justify-content: center;
+        margin-left: 10px;
+        font-size: 1.8rem;
+        content: space-evenly;
+    }
+}   
 
-        .text {
-            justify-content: center;
-            margin-left: 10px;
-            font-size: 1.2rem;
-            content: space-evenly;
-        }
-    }   
-}
-}

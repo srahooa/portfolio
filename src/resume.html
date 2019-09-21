@@ -37,36 +37,35 @@
         </header>
         
         <article class="resume">
-            <section id="resume">
-                <h2>Coding Skills</h2>
-                    <img src="docs/html.png" alt="html logo">
-                    <img src="docs/css-logo.png" alt="css logo">
-                    <img src="docs/sass.png" alt="sass logo">
-                    <img src="docs/ruby.png" alt="ruby logo">
-                <div id="cv">
+            <h2>Coding Skills</h2>
+                <section id="resume">
+                    <img id="logos" src="docs/html.png" alt="html logo">
+                    <img id="logos" src="docs/css-logo.png" alt="css logo">
+                    <img id="logos" src="docs/sass.png" alt="sass logo">
+                    <img id="logos" src="docs/ruby.png" alt="ruby logo">
+                </section>
+                <section id="cv">
                     <h2>Resume</h2>
-                    <a href="https://github.com/srahooa/portfolio/blob/master/src/docs/resume.pdf" alt="link to pdf">Click for PDF</a>
-                </div>
-            </section>
-           
+                    <a id="button" href="https://github.com/srahooa/portfolio/blob/master/src/docs/resume.pdf" alt="link to pdf" class="button">Click for PDF</a>
+                </section>
         </article>
+    </div>
+        <!-- footer is outside container so to anchor it to the bottom of the page -->
 
-        
-        <footer>
-            <p>&copy; 2019 Sarah Aldrich.</p>
-            <section id="links">
-                <a href="portfolio.html"><li>Home</li></a>
-                <a href="about.html"><li>About Me</li></a>
-                <a href="resume.html"><li>Resume</li></a>
-                <a href="news.html"><li>News & Blog</li></a>
-                <a href="contact.html"><li>Contact Me</li></a>          
+        <footer id="footer">
+            <section class="links">
+                <a href="portfolio.html"><div id="links">Home</div></a>
+                <a href="about.html"><div id="links">About Me</div></a>
+                <a href="resume.html"><div id="links">Resume</div></a>
+                <a href="news.html"><div id="links">News & Blog</div></a>
+                <a href="contact.html"><div id="links">Contact Me</div></a>          
             </section>
             <div class="icons">
-                <a href="https://twitter.com/soo_aldrich"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/sarah-aldrich/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.github.com/srahooa"><i class="fab fa-github"></i></a>
-                </div>
-        </footer>
-    </div>    
+                <a href="https://twitter.com/soo_aldrich"><img src="/src/docs/bird.png" width="25px"></a>
+                <a href="https://www.linkedin.com/in/sarah-aldrich/"><img src="/src/docs/linked.png" width="25px"></a>
+                <a href="https://www.github.com/srahooa"><img src="/src/docs/git.png" width="25px"></a>
+            </div>
+            <p id="copy">&copy; 2019 Sarah Aldrich.</p>
+        </footer>    
 </body>
 </html>

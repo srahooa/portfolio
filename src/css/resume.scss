@@ -1,88 +1,118 @@
-#container {
+h2 {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Quando', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #740000;
+}
+#resume {
     display: flex;
-}
-
-.resume {
-    h2 {
-        margin: 10px;
-        padding: 20px;
-        font-family: 'Quando', serif;
-        color: #740000;
-    }
-    #resume {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        img {
-            margin: auto;
-            padding: 10px;
-            filter: grayscale(100%);  
-            &:hover {
-                filter: none;
-                transition-duration: 2s;
-            }
-            #cv {
-                flex-direction: column;
-                justify-content: center;
-            }
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        margin: auto;
+        padding: 10px;
+        filter: grayscale(100%);  
+        &:hover {
+            filter: none;
+            transition-duration: 2s;
         }
-    }   
-}
+    }
+}   
 
+#button {
+    background-color: #740000;
+    opacity: .7;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 
+        0 2px 4px #fff, /*bottom external highlight*/
+        0 -2px 2px #666, /*top external shadow*/ 
+        inset 0 -2px 2px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+        inset 0 2px 2px rgba(255,255,255,0.8); /*top internal highlight*/
+}
 
 
 // // PHONE
-// @media screen and (max-width: 420px) {
-//     #container {
-//         width: 100%;
-//         height: auto;
-//     }
-// }   
+@media screen and (max-width: 420px) {
+    .resume {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #logos {
+        width: 150px;
+    }
+    #cv {
+        padding: 50px;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+      
 
 // TABLET
 @media screen and (min-width: 421px) and (max-width: 800px) {
-    #container {
-        background-size: cover;
-        width: 100% vp;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        h1 {
-            width: 100%;
-            margin-left: auto;
+    h2 {
+        font-size: 2rem;
+    }
+    #logos {
+        width: 200px;
+        padding: 10px;
+    }
+    .resume {
+        padding: 50px 0; 
+        #resume {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
         }
-        .resume {
-            width: 80%;
-            margin-left: 10px;
-            font-size: 1.2rem; 
+        #cv {
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+            #button {
+                margin: 0 200px;
+            }
+        }
     }
 }        
 
 // DESKTOP
 @media screen and (min-width: 801px) {
-    #container {    
-        background-image: url(../docs/lion-wide.jpg);
-        width: 100% vp;
-        border: 2px solid red;
-        nav {
-            height: 0;
+    #container {
+        // width: 100%;
+        height: 100% vh;
+        display: flex;
+        flex-direction: column; 
+    }
+    h2 {
+        margin: 70px 150px;
+        font-size: 3rem;
         }
-        h1 {
-            font-size: 6rem;
-            width: 100%;
+    #resume {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        #logos {
+            width: 200px;
+            padding: 10px;
         }
-        .values div p {
-            font-size: 2rem;
-        }
-        .text {
-            width: 70%;
-            justify-content: center;
-            margin-left: 10px;
-            font-size: 1.2rem;
-            content: space-evenly;
-            }   
+    }
+    #cv {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        #button {
+            margin: 0 200px;
         }
     }
 }
