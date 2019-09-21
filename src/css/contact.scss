@@ -1,15 +1,21 @@
+// styling the contact me form
+@mixin bkgdcolor {
+    background-color: whitesmoke;
+}
+
 .contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
     p {
-        background-color: whitesmoke;
+        @include bkgdcolor();
         opacity: .7;
         border-radius: 40px;
         padding: 15px;
         margin: 10px;
         }
+        //text boxes and labels
     input {
         width: 100%;
         padding: 12px 20px;
@@ -20,7 +26,7 @@
         opacity: .8;
         }
     label{
-        background-color: whitesmoke;
+        @include bkgdcolor();
         opacity: .5;
         border-radius: 40px;
         padding: 5px;

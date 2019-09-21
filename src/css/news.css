@@ -1,6 +1,5 @@
 #blog-info {
   font-size: 1rem;
-  color: black;
   background-color: whitesmoke;
   padding: 10px;
   margin: 15px;
@@ -9,7 +8,7 @@
 }
 
 #blog-info #link {
-  color: #740000;
+  color: #ec9728;
   font-weight: bold;
 }
 
@@ -25,8 +24,8 @@
 }
 
 #internal {
-  color: whitesmoke;
-  background-color: #740000;
+  color: #2d2d2d;
+  background-color: #ec9728;
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
@@ -67,12 +66,12 @@
 }
 
 .previews h3 {
-  background-color: whitesmoke;
   padding: 10px;
   border-radius: 20px;
   opacity: .8;
   font-family: 'Quando', serif;
-  color: #740000;
+  color: #ec9728;
+  background-color: whitesmoke;
   font-weight: bold;
 }
 
@@ -117,6 +116,9 @@
     font-size: 1.6;
     font-weight: bold;
   }
+  .previews .date {
+    font-size: .8rem;
+  }
   .previews img {
     width: 400px;
     -webkit-box-pack: center;
@@ -151,6 +153,9 @@
   #container .previews h3 {
     font-size: 1.6;
     font-weight: bold;
+  }
+  #container .previews .date {
+    font-size: 1rem;
   }
   #container .previews img {
     width: 400px;

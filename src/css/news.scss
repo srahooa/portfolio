@@ -1,31 +1,45 @@
+//mixin to make color changes easier
+
+@mixin headingclr {
+    color: #ec9728;
+}
+@mixin linkcolor {
+    color: #2d2d2d;
+    background-color: #ec9728;
+}
+@mixin transparency {
+    background-color: whitesmoke;
+}
+
+// start of blog page- intro and links to posts
 #blog-info {
     font-size: 1rem;
-    color: black;
-    background-color: whitesmoke;
+    @include transparency();
     padding: 10px;
     margin: 15px;
     border-radius: 20px;
     opacity: .7;
     #link {
-        color: #740000;
+        @include headingclr();
         font-weight: bold;
     }
+    //links to posts
     #internal {
         display: flex;
         flex-direction: column;
         font-size: 1rem;  
     }
 }
-
+//styling the links
 #internal {
-    color: whitesmoke;
-    background-color: #740000;
+    @include linkcolor();
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
     opacity: .6;
     font-size: .7rem;
 }
+//blog posts
 .previews {
     display: flex;
     flex-wrap: wrap;
@@ -46,17 +60,16 @@
         padding: 10px 0;
     }  
     h3 {
-        background-color: whitesmoke;
         padding: 10px;
-        // margin: 15px;
         border-radius: 20px;
         opacity: .8;
         font-family: 'Quando', serif;
-        color: #740000;
+        @include headingclr();
+        @include transparency();
         font-weight: bold;
     }  
 }
-
+//creating a white background for better contrast
 #preview {
     background-color: whitesmoke;
     padding: 10px 10px 30px 10px;
@@ -92,6 +105,9 @@
             font-size: 1.6;
             font-weight: bold;
         }
+        .date {
+            font-size: .8rem;
+        }
         img {
             width: 400px;
             justify-content: center;
@@ -119,6 +135,9 @@
             h3 {
                 font-size: 1.6;
                 font-weight: bold;
+            }
+            .date {
+                font-size: 1rem;
             }
             img {
                 width: 400px;

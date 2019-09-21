@@ -8,14 +8,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #393b3e;
+  background-color: #000000;
   font-family: 'Maven Pro', sans-serif;
-  color: whitesmoke;
   font-size: 1rem;
 }
 
 #footer .links {
-  color: white;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -27,23 +25,43 @@
 #footer .links #links {
   display: inline-block;
   margin: 20px;
-  color: #b5b5b5;
 }
 
 #footer .links a {
-  background-color: #393b3e;
+  background-color: #000000;
 }
 
-#footer #icons {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  width: 100%;
-  background-color: #393b3e;
+#footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #000000;
 }
 
-#footer #icons a {
-  background-color: #393b3e;
+#footer .icons a {
+  background-color: #000000;
+}
+
+#footer .icons a:hover {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 #footer #copy {
@@ -55,44 +73,17 @@
   width: 100%;
   line-height: 1.8;
   font-size: 1rem;
-  background-color: #393b3e;
-  color: #b5b5b5;
+  background-color: #000000;
+  color: #5e5d5d;
 }
 
 #links:hover {
-  color: #740000;
-  background-color: #939393;
+  color: black;
+  background-color: #149bb6;
   text-decoration: underline;
   border-radius: 20px;
   padding: 10px;
-  width: 15%;
-}
-
-/* Media Queries */
-@media screen and (max-width: 600px) {
-  #footer {
-    width: 100%;
-  }
-  #footer .links {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-  }
-  #footer .links #links {
-    text-align: center;
-    margin: 5px;
-  }
-  #footer #icons {
-    margin: 25px;
-  }
-  #footer #copy {
-    display: inline-block;
-  }
-}
-
-@media screen and (min-width: 601px) {
-  #footer {
-    padding: 20px;
-  }
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 /*# sourceMappingURL=footer.css.map */

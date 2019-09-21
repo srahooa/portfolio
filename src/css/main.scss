@@ -1,3 +1,4 @@
+//body and background styling
 * {
     margin: 0;
     padding: 0;
@@ -11,23 +12,36 @@ header {
     width: 100%;
 }
 
-#container {
-    width: 100%;
-    background-image: url(../docs/lion.jpg);
+//mixins to enable change easier 
+
+@mixin bkgdimage {
+    background-image: url(../docs/darkbird.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
+}
+
+@mixin headingclr {
+    color: #ec9728;
+}
+//background image
+#container {
+    width: 100%;
+    @include bkgdimage();
     font-family: 'Maven Pro', sans-serif;
     background-color: rgb(255, 255, 255);
     background-size: 100vh;
     h1 {
         font-family: 'Quando', serif;
         font-size: 4rem;
-        color: #740000;
         padding: 100px;
+        @include headingclr();
     }
 }
 
+//PHONE
 @media screen and (max-width: 420px) {
     #container {
         display: flex;
@@ -45,8 +59,7 @@ header {
 // TABLET
 @media screen and (min-width: 421px) and (max-width: 800px) {
     #container {
-        background-size: cover;
-        min-height: 100vh;
+        @include bkgdimage();
         width: 100% vp;
         display: flex;
         flex-wrap: wrap;
@@ -62,10 +75,8 @@ header {
 
 // DESKTOP
 @media screen and (min-width: 801px) {
-    #container {    
-        background-image: url(../docs/lion-wide.jpg);
-        background-size: cover;
-        background-position: center;
+    #container {   
+        @include bkgdimage(); 
         height: auto;
         width: 100% vp;
         padding-bottom: 60px;
