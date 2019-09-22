@@ -23,13 +23,13 @@ Tracking tasks on Trello:
 https://github.com/srahooa/portfolio/blob/master/src/docs/trello-workprogress.png
 
 Wireframes in the manner I am most comfortable with: 
-<img src="../version3/ppt/wf-desktop.jpg" width="50%">
+<img src="../version3/ppt/wf-desktop.jpg" height="50%">
 https://github.com/srahooa/portfolio/blob/version3/ppt/wf-desktop.jpg
-<img src="../version3/ppt/wf-mobile.jpg" width="50%">
+<img src="../version3/ppt/wf-mobile.jpg" height="50%">
 https://github.com/srahooa/portfolio/blob/version3/ppt/wf-mobile.jpg
 
 For additional screenshots, see here:
-<img src="../version3/ppt/PORTFOLIO.pdf" width="50%">
+<img src="../version3/ppt/PORTFOLIO.pdf">
 https://github.com/srahooa/portfolio/blob/version3/ppt/PORTFOLIO.pdf
 
 ### Target audience
