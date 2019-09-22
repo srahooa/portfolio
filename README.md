@@ -10,7 +10,7 @@ The five pages are the 'landing page' (index.html), 'about me' which shares soft
 
 ### Sitemap
 The site visitor lands on the welcome page. From there using the hamburger menu or the fotter links, they can access the other four pages. Only 'resume.html' and 'contact.html' have further links- pdf link, or a contact me form. Additionally in the footer, a visitor can access my social media links- twitter, linkedin, and github. 
-<img src="../blob/version3/ppt/sitemap.jpg">
+<img src="../version3/ppt/sitemap.jpg">
 https://github.com/srahooa/portfolio/blob/version3/ppt/sitemap.jpg
 
 ### Screenshots
