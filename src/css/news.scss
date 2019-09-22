@@ -1,11 +1,11 @@
 //mixin to make color changes easier
 
 @mixin headingclr {
-    color: #ec9728;
+    color: #740000;
 }
 @mixin linkcolor {
-    color: #2d2d2d;
-    background-color: #ec9728;
+    color: whitesmoke;
+    background-color: #740000;
 }
 @mixin transparency {
     background-color: whitesmoke;
@@ -36,7 +36,7 @@
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
-    opacity: .6;
+    opacity: .8;
     font-size: .7rem;
 }
 //blog posts
@@ -63,7 +63,7 @@
         padding: 10px;
         border-radius: 20px;
         opacity: .8;
-        font-family: 'Quando', serif;
+        font-family: 'Oswald', sans-serif;;
         @include headingclr();
         @include transparency();
         font-weight: bold;

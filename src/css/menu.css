@@ -6,7 +6,7 @@ a {
     transition: color 0.3s ease;  
     }
 a:hover {
-    color: #0ca2bd;
+    color: darkblue;
     background-color: whitesmoke;
 }
 
@@ -51,7 +51,7 @@ ul {
   margin-bottom: 5px;
   position: relative;
   
-  background: #ec9728;
+  background: #740000;
   border-radius: 3px;
   
   z-index: 1;
@@ -75,7 +75,7 @@ ul {
 #menuToggle input:checked ~ span  {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #ec9728;
+  background: #232323;
 }
 
 /* hide the middle one */

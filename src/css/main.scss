@@ -15,7 +15,7 @@ header {
 //mixins to enable change easier 
 
 @mixin bkgdimage {
-    background-image: url(../docs/darkbird.jpg);
+    background-image: url(../docs/lion.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,17 +24,17 @@ header {
 }
 
 @mixin headingclr {
-    color: #ec9728;
+    color: #740000;
 }
 //background image
 #container {
     width: 100%;
     @include bkgdimage();
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: rgb(255, 255, 255);
     background-size: 100vh;
     h1 {
-        font-family: 'Quando', serif;
+        font-family: 'Oswald', sans-serif;
         font-size: 4rem;
         padding: 100px;
         @include headingclr();
@@ -46,8 +46,7 @@ header {
     #container {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        min-height: 100vh;
+        width: 100% vp;
         padding-bottom: 50px;
         h1 {
             padding: 75px 45px;

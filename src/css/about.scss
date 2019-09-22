@@ -35,7 +35,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
         h1 {
             padding: 75px 45px 45px 45px;
         }
@@ -72,7 +72,7 @@
                 align-items: center;
                 p {
                     width: 80%;
-                    font-size: 2rem;
+                    font-size: 1.4rem;
                     margin: 10px;
                 }
             }
@@ -80,7 +80,7 @@
         .text {
             padding: 30px 0;
             p {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 margin: 25px;
             }
         }      
@@ -97,7 +97,7 @@
             width: 70%;
             p {
                 width: 80%;
-                font-size: 2rem;
+                font-size: 1.4rem;
                 margin: 10px;
             }
         }   
@@ -105,7 +105,7 @@
     .text {
         justify-content: center;
         margin-left: 10px;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         content: space-evenly;
     }
 }   

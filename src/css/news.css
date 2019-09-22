@@ -8,7 +8,7 @@
 }
 
 #blog-info #link {
-  color: #ec9728;
+  color: #740000;
   font-weight: bold;
 }
 
@@ -24,12 +24,12 @@
 }
 
 #internal {
-  color: #2d2d2d;
-  background-color: #ec9728;
+  color: whitesmoke;
+  background-color: #740000;
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
-  opacity: .6;
+  opacity: .8;
   font-size: .7rem;
 }
 
@@ -69,8 +69,8 @@
   padding: 10px;
   border-radius: 20px;
   opacity: .8;
-  font-family: 'Quando', serif;
-  color: #ec9728;
+  font-family: 'Oswald', sans-serif;
+  color: #740000;
   background-color: whitesmoke;
   font-weight: bold;
 }
