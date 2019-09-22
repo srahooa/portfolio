@@ -29,7 +29,6 @@ https://github.com/srahooa/portfolio/blob/version3/ppt/wf-desktop.jpg
 https://github.com/srahooa/portfolio/blob/version3/ppt/wf-mobile.jpg
 
 For additional screenshots, see here:
-<img src="../version3/ppt/PORTFOLIO.pdf">
 https://github.com/srahooa/portfolio/blob/version3/ppt/PORTFOLIO.pdf
 
 ### Target audience
