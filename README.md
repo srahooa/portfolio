@@ -10,26 +10,26 @@ The five pages are the 'landing page' (index.html), 'about me' which shares soft
 
 ### Sitemap
 The site visitor lands on the welcome page. From there using the hamburger menu or the fotter links, they can access the other four pages. Only 'resume.html' and 'contact.html' have further links- pdf link, or a contact me form. Additionally in the footer, a visitor can access my social media links- twitter, linkedin, and github. 
-![](portfolio/blob/version3/ppt/sitemap.jpg)
+![](../portfolio/blob/version3/ppt/sitemap.jpg)
 https://github.com/srahooa/portfolio/blob/version3/ppt/sitemap.jpg
 
 ### Screenshots
 Planning my layouts and color scheme: 
-![](/portfolio/blob/master/src/docs/moodboards.png)
+![](../portfolio/blob/master/src/docs/moodboards.png)
 https://github.com/srahooa/portfolio/blob/master/src/docs/moodboards.png
 
 Tracking tasks on Trello:
-![](/portfolio/blob/master/src/docs/trello-workprogress.png)
+![](../portfolio/blob/master/src/docs/trello-workprogress.png)
 https://github.com/srahooa/portfolio/blob/master/src/docs/trello-workprogress.png
 
 Wireframes in the manner I am most comfortable with: 
-![](/portfolio/blob/version3/ppt/wf-desktop.jpg)
+![](../portfolio/blob/version3/ppt/wf-desktop.jpg)
 https://github.com/srahooa/portfolio/blob/version3/ppt/wf-desktop.jpg
-![](/portfolio/blob/version3/ppt/wf-mobile.jpg)
+![](../portfolio/blob/version3/ppt/wf-mobile.jpg)
 https://github.com/srahooa/portfolio/blob/version3/ppt/wf-mobile.jpg
 
 For additional screenshots, see here:
-![](/portfolio/blob/version3/ppt/PORTFOLIO.pdf)
+![](../portfolio/blob/version3/ppt/PORTFOLIO.pdf)
 https://github.com/srahooa/portfolio/blob/version3/ppt/PORTFOLIO.pdf
 
 ### Target audience
